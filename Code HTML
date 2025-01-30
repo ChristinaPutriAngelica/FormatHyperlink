@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<center>
+
+    <h2> 1. An HTML form with two input fields and one submit button:</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    
+    <p>If you press the submit button you will be immediately directed to the next page</p>
+
+    <h1>2. Form with checkboxes</h1>
+    <h3>I like one of the options below</h3>
+
+<h4>
+    <form action="/action_page.php" method="get">
+        <p>Movie</p>
+        <img src="https://lumiere-a.akamaihd.net/v1/images/p_disneymovies_mufasa_poster_v1_eb23f7a5.jpeg" alt="Girl in a jacket"
+         width="150" height="200
+         ">
+      <input type="checkbox" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I like Movie</label><br>
+      <p>K-drama</p>
+      <img src="https://preview.redd.it/rom-coms-like-this-v0-w9bgdcx19sfe1.jpeg?width=640&crop=smart&auto=webp&s=477dbbf95db2f75791e827f9b013c1b8eaf83bf7" alt="Girl in a jacket"
+       width="150" height="200">
+      <input type="checkbox" name="vehicle2" value="Car">
+      <label for="vehicle2"> I like K-drama</label><br>
+      <p>Music</p>
+      <img src="https://i.scdn.co/image/ab67616d00001e023f203b8d0d8e54fab416a825" alt="Girl in a jacket"
+       width="150" height="150
+       ">
+      <input type="checkbox" name="vehicle3" value="Boat" checked>
+      <label for="vehicle3"> I like Music</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+</h4>
+
+    <h1> 3. HTML Links </h1>
+
+
+    <h3>Memunculkan Link URL tutorial HTML</h3>
+    <p><a href="https://youtu.be/qz0aGYrrlhU">HTML Pages</a></p>
+    <h3>Memunculkan Link Gambar</h3>
+    <p><a href="https://asset-2.tstatic.net/travel/foto/bank/images/seoul_20180926_115920.jpg">PICT Pages</a></p>
+    <h3>Memunculkan Link URL Youtube Music </h3>
+    <p><a href="https://youtu.be/Q49pnA4jsp8?si=oc2SgDihjs-ZM4Mp">Music Pages</a></p>
+
+
+    <h1> 4. Form Contact </h1>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Contact</legend>
+        <p>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="your name..." />
+        </p>
+        <p>
+            <label>Subject:</label>
+            <input type="text" name="subject" placeholder="subject..." />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="your email..." />
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Send" />
+        </p>
+        </fieldset>
+    </form>
+
+    <h1> 5. Form Register </h1>
+
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Username..." />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your email..." />
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Passowrd..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+            <label>Biografi:</label>
+            <textarea name="biografi"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        </fieldset>
+    </form>
+
+    <h1> 6. Form Tingkat Lanjut </h1>
+
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Form</legend>
+        <p>
+            <label>Alamat Web:</label>
+            <input type="url" name="name" placeholder="Masukan URL Web..." />
+        </p>
+        <p>
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal" />
+        </p>
+        <p>
+            <label>Umur:</label>
+            <input type="number" min="10" max="90" name="umur" />
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Send" />
+        </p>
+        </fieldset>
+    </form>
+</center>
+
+</body>
+</html>
